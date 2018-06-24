@@ -15,63 +15,87 @@
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="assets/javascript/sandbox.js"></script>
+    <script src="assets/java/app.js"></script>
 
 </head>
 
 <body>
 
     <div class="container">
-        <div class="row">
-            <div class="col-lg-1" style="background-color: transparent">
+            <div class="row">
+                <div class="col-lg-1" style="background-color: transparent">
+                </div>
+                <div class="col-lg-10">
+                    <div class="row" id="header">
+                        <h1>Totally Trivial Trivia!</h1>
+                    </div>
+
+                    <div class="row" id="timeRemaining">
+                        <h3>Time Remaining:</h3>
+                    </div>
+
+                    <!-- Creating the start button -->
+                    <div class="row">
+                            <div class="col-lg-12">
+                                <button class="startButton" style="position: relative; left: 50%;">
+                                    Start Game
+                                </button>
+                            </div>
+                        </div>
+
+                    <div class="row" id="q1">
+                        <h2>What was the first full-length CGI movie?</h2>
+                    </div>
+
+                    <!--The reason we use a name in radio buttons (multiple choice) is to link back to all the answers, 
+                kind of like making an array. We will call on the name when doing if statements in Javascript-->
+
+                    <div class="row" id="q1Answers">
+                        <input type="radio" name="movieQuestion" value="aBugsLife"> A Bug's Life
+                        <br>
+                        <input type="radio" name="movieQuestion" value="monstersInc"> Monster's Inc.
+                        <br>
+                        <input type="radio" name="movieQuestion" value="toyStory"> Toy Story
+                        <br>
+                        <input type="radio" name="movieQuestion" value="lionKing"> Lion King
+                        <br>
+                    </div>
+
+                    <div class="row" id="q2">
+                        <h2>Which of these is NOT a name of one of the Spice Girls?</h2>
+                    </div>
+
+                    <div class="row" id="q2Answers">
+                        <input type="radio" name="spiceGirls" value="Sporty Spice"> Sporty Spice
+                        <br>
+                        <input type="radio" name="spiceGirls" value="Fred"> Fred Spice
+                        <br>
+                        <input type="radio" name="spiceGirls" value="Scary"> Scary Spice
+                        <br>
+                        <input type="radio" name="spiceGirls" value="Posh"> Posh Spice
+                        <br>
+                    </div>
+
+                    <div class="row" id="q3">
+                        <h2>Which NBA team won the most titles in the 90s?</h2>
+                    </div>
+
+                    <div class="row" id="q3Answers">
+                        <input type="radio" name="nbaTeam" value="Knicks"> New York Knicks
+                        <br>
+                        <input type="radio" name="nbaTeam" value="Trailblazers"> Portland Trailblazers
+                        <br>
+                        <input type="radio" name="nbaTeam" value="Lakers"> Los Angeles Lakers
+                        <br>
+                        <input type="radio" name="nbaTeam" value="Bulls"> Chicago Bulls
+                        <br>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-1" style="background-color: transparent">
+                </div>
+
             </div>
-            <div class="col-lg-10">
-                <div class="row" id="header">
-                    <h1>Totally Trivial Trivia!</h1>
-                </div>
-
-                <div class="row" id="timeRemaining">
-                    <h3>Time Remaining:</h3>
-                </div>
-
-                <div class="row" id="q1">
-                    <h2>What was the first full-length CGI movie?</h2>
-                </div>
-                
-                <div class="row" id="q1Answers">
-                    <input type="radio" name="movieQuestion" value="aBugsLife"> A Bug's Life <br>
-                    <input type="radio" name="movieQuestion" value="monstersInc"> Monster's Inc.<br>
-                    <input type="radio" name="movieQuestion" value="toyStory"> Toy Story <br>
-                    <input type="radio" name="movieQuestion" value="lionKing"> Lion King <br>
-                </div>
-                
-                <div class="row" id="q2">
-                    <h2>Which of these is NOT a name of one of the Spice Girls?</h2>
-                </div>
-
-                <div class="row" id="q2Answers">
-                    <input type="radio" name="movieQuestion" value="Sporty Spice"> Sporty Spice <br>
-                    <input type="radio" name="movieQuestion" value="Fred"> Fred Spice <br>
-                    <input type="radio" name="movieQuestion" value="Scary"> Scary Spice <br>
-                    <input type="radio" name="movieQuestion" value="Posh"> Posh Spice <br>                
-                </div>
-                
-                <div class="row" id="q3">
-                    <h2>Which NBA team won the most titles in the 90s?</h2>
-                </div>
-                
-                <div class="row" id="q3Answers">
-                    <input type="radio" name="movieQuestion" value="Knicks"> New York Knicks <br>
-                    <input type="radio" name="movieQuestion" value="Trailblazers"> Portland Trailblazers <br>
-                    <input type="radio" name="movieQuestion" value="Lakers"> Los Angeles Lakers <br>
-                    <input type="radio" name="movieQuestion" value="Bulls"> Chicago Bulls <br>
-                </div>
-
-            </div>
-
-            <div class="col-lg-1" style="background-color: transparent">
-            </div>
-
         </div>
-
     </div>
